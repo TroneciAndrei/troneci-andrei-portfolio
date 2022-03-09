@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -15,15 +15,20 @@
     rel="stylesheet"
     href="./src/style.css"
   >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  >
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-body">
+<body class="bg-body m-0 p-0 box-border">
   <div class="container mx-auto">
-    <header class="flex flex-col md:flex-row items-center justify-between m-3 mb-12 py-8">
+    <header class="flex flex-col lg:flex-row items-center justify-between mb-12 py-8">
       <a
         href="index.html"
-        class="text-white text-4xl font-bold"
+        class="text-white text-4xl font-bold lg:mb-0 mb-6"
         title="Troneci Andrei Website"
       >Troneci Andrei</a>
       <nav>
@@ -64,18 +69,22 @@
 
     </header>
 
-    <main class="">
-      <section class="text-white h-24 text-center flex items-center justify-center py-8 min-h-[70vh]">
+    <main class="container relative">
+      <section class="text-white h-24 text-center flex items-center justify-center py-8 sm:min-h-[70vh]">
         <section class="block grow shrink basis-0 py-3 sm:w-3/4">
-          <h1 class="text-4xl font-bold uppercase leading-10 mb-8 flex-wrap">Hi my name is Troneci Andrei</h1>
-          <p class="text-2xl uppercase flex-wrap mb-6">I'm Front-End Developer</p>
+          <h1 class="md:text-4xl sm:text-2xl font-bold uppercase leading-10 sm:mb-8 flex-wrap">
+            Hi my name is Troneci Andrei
+          </h1>
+          <p class="md:text-2xl sm:text-xl uppercase flex-wrap mb-6">
+            I'm Front-End Developer
+          </p>
           <section>
             <a
               href="https://troneciandrei.github.io/interview/"
               target="_blank"
               rel="noopener noreferrer"
               title="View my projects"
-              class="font-bold inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500 mr-8"
+              class="font-bold inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500 mr-8 sm:text-sm md:text-base lg:text-lg"
             >View Projects</a>
 
             <a
@@ -83,10 +92,44 @@
               target="_blank"
               rel="noopener noreferrer"
               title="View my CV"
-              class="text-black font-bold inline-block py-2 px-4 rounded-3xl bg-white hover:scale-125 hover:bg-sky-600 hover:duration-500 hover:text-white"
+              class="text-black font-bold inline-block py-2 px-4 rounded-3xl bg-white hover:scale-125 hover:bg-sky-600 hover:duration-500 hover:text-white sm:text-sm md:text-base lg:text-lg"
             >View CV</a>
           </section>
         </section>
+      </section>
+
+      <section class="flex items-center flex-col fixed left-4 sm:left-8 top-[50%] text-2xl text-white gap-4">
+        <a
+          href=""
+          class="hover:scale-150 duration-500"
+          title="Go to Github"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href=""
+          class="hover:scale-150 duration-500"
+          title="Go to LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a
+          href=""
+          class="hover:scale-150 duration-500"
+          title="Go to Facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a
+          href=""
+          class="hover:scale-150 duration-500"
+          title="Go to Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </section>
     </main>
 
@@ -98,20 +141,20 @@
         <img
           src="./img/profile.jpg"
           alt="Troneci Andrei"
-          class="lg:w-4/5 rounded-[50%] m-auto md:w-80 md:mb-12"
+          class="w-[300px] lg:w-4/5 rounded-[50%] m-auto md:mb-12"
         >
       </aside>
 
       <section class="mb-24">
         <h1 class="text-4xl font-bold text-center mb-12">About me</h1>
-        <p class="w-3/4 m-auto mb-8 leading-6">
+        <p class="block lg:w-[90%] sm:w-[70%] w-[65%] m-auto leading-8 text-lg mb-9">
           My name is Troneci Andrei I live in Romania, Bucharest, and my adventure as a Front end Developer started in
           2018 when I graduated from the Informal IT School in Bucharest.Professionally, I started in 2020 when I
           started my first job as a Web Designer at Invibes, and since then I haven't stopped at all from developing
           on the Front End Developer side.
         </p>
 
-        <p class="w-3/4 m-auto leading-6">
+        <p class="block lg:w-[90%] sm:w-[70%] w-[65%] m-auto leading-8 text-lg">
           I’ve had the privilege of working at an advertising agency as Web Desiger and in a printing company as a
           graphic designer. My
           main focus these days is building accessible, interactive websites and fully responsive. My dream is to
@@ -122,11 +165,12 @@
 
     <section
       id="projects"
-      class="flex justify-center items-center text-white text-center flex-col w-3/4 m-auto pb-12"
+      class="flex justify-center items-center text-white text-center flex-col w-full m-auto pb-12"
     >
       <header class="mb-24">
         <h1 class="text-4xl font-bold mb-12">My Recent Work</h1>
-        <p class="mb-8 leading-6 lg:w-full md:w-3/4 md:m-auto">Here are a few design projects I've worked on recently.
+        <p class="mb-8 leading-6 lg:w-full w-full md:m-auto text-xl">Here are a few design projects I've worked on
+          recently.
           Want to see more? <a
             class="text-sky-400 font-bold uppercase relative after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-[-5px] after:right-0 hover:after:w-full hover:after:left-0 after:duration-150 hover:after:bg-sky-400"
             href="mailto:troneciandrei@gmail.com"
@@ -134,51 +178,57 @@
         </p>
       </header>
 
-      <section class="flex items-center text-white text-left lg:flex-row md:flex-col gap-10 mb-12">
-        <aside class="lg:w-full lg:h-full lg:m-0 md:w-3/4 md:m-auto">
-          <img
-            class="rounded-3xl"
-            src="./img/project1.png"
-            alt="Project 1"
-          >
-        </aside>
-        <section class="md:w-3/4 m-auto lg:text-left md:text-center">
-          <h1 class="text-4xl font-bold mb-12">Creative Design Project</h1>
-          <p class="mb-8 leading-6">
-            This project is full responsive made in vanilla HTML, CSS and JavaScript my first
-            project made for a company as a template
-          </p>
-          <a
-            href="https://troneciandrei.github.io/Creative-Design/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Creative Design Website"
-            class="inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500"
-          >Preview</a>
+      <section class="2xl:columns-2 md:columns-1 mb-12 w-[300px] m-auto md:w-3/4 lg:w-full">
+        <section class="flex items-center text-white text-left lg:flex-row flex-col gap-3 md:mb-8">
+          <aside class="lg:w-full lg:h-full lg:m-0 md:w-3/4 md:m-auto">
+            <img
+              class="rounded-3xl"
+              src="./img/project1.png"
+              alt="Project 2"
+            >
+          </aside>
+          <section class="md:w-3/4 m-auto lg:text-left sm:text-center block w-full">
+            <h1 class="lg:text-xl md:text-lg font-bold mb-4 sm:mb-12">
+              Creative Design Project
+            </h1>
+            <p class="mb-4 sm:mb-8 leading-6 lg:text-base">
+              This project is full responsive made in vanilla HTML, CSS and JavaScript my first
+              project made for a company as a template
+            </p>
+            <a
+              href="https://troneciandrei.github.io/Creative-Design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Creative Design Website"
+              class="inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500 mb-3"
+            >Preview</a>
+          </section>
         </section>
-      </section>
 
-      <section class="flex items-center text-white text-left lg:flex-row md:flex-col gap-10">
-        <aside class="lg:w-full lg:h-full lg:m-0 md:w-3/4 md:m-auto">
-          <img
-            class="rounded-3xl"
-            src="./img/project2.png"
-            alt="Project 2"
-          >
-        </aside>
-        <section class="md:w-3/4 m-auto">
-          <h1 class="text-4xl font-bold mb-12">ASMBS Website</h1>
-          <p class="mb-8 leading-6">
-            This full responsive website was a concept for the Association of Medical Students from Suceava, Romania
-            made entirely with vanilla HTML, CSS and JavaScript
-          </p>
-          <a
-            href="https://troneciandrei.github.io/ASMBS/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Creative Design Website"
-            class="inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500"
-          >Preview</a>
+        <section class="flex items-center text-white text-left lg:flex-row flex-col gap-3 md:m-0">
+          <aside class="block lg:w-full lg:h-full lg:m-0 md:w-3/4 md:m-auto">
+            <img
+              class="rounded-3xl"
+              src="./img/project2.png"
+              alt="Project 2"
+            >
+          </aside>
+          <section class="md:w-3/4 m-auto lg:text-left sm:text-center block w-full">
+            <h1 class="lg:text-xl md:text-lg font-bold mb-4 sm:mb-12">
+              ASMBS Website
+            </h1>
+            <p class="mb-8 leading-6 w-full lg:text-base">
+              This full responsive website was a concept for the Association of Medical Students from Suceava, Romania
+              made entirely with vanilla HTML, CSS and JavaScript
+            </p>
+            <a
+              href="https://troneciandrei.github.io/ASMBS/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Creative Design Website"
+              class="inline-block py-2 px-4 rounded-3xl bg-sky-400 hover:scale-125 hover:bg-sky-600 hover:duration-500"
+            >Preview</a>
+          </section>
         </section>
       </section>
     </section>
